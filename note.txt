@@ -1,0 +1,41 @@
+/* // Seat Setting
+const rows = ["a","b","c","d","e","f","g","h","i","j","k","l"]
+
+let html = "";
+let counter = 1;
+rows.forEach( eachRow => {
+    html += `<div class="label">${eachRow}</div>`;
+    for (let i = 0; i < 3; i++) {
+        html += `<div id="${eachRow + counter}">${counter}</div>`;
+        counter++;
+    }
+    counter += 12;
+});
+document.getElementById("left").innerHTML = html;
+
+
+html = "";
+counter = 1;
+rows.forEach(eachRow => {
+    counter = counter + 12;
+    for (let i = 0; i < 3; i++) {
+        html += `<div id="${eachRow + counter}">${counter}</div>`
+        counter ++;
+    }
+    html += `<div class = "label">${eachRow}</div>`
+});
+document.getElementById("right").innerHTML = html;
+
+html = "";
+counter = 1;
+rows.forEach(eachRow => {
+    counter = counter + 3;
+    for (let i = 0; i <9; i++) {
+        html += `<div id="${eachRow + counter}">${counter}</div>`;
+        counter++
+    }
+    counter += 3;
+})
+document.getElementById('middle').innerHTML = html;
+
+*/
